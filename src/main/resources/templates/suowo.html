@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <!--semantic ui-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <!--引入自定义css -->
+    <link rel="stylesheet" href="./demo/src/main/resources/templates/css/me.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+
+<body>
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <div class="ui inverted secondary menu">
+            <h2 class="ui teal header item">缩短网址</h2>
+            <a href="#" class="item"><i class="home icon"></i>首页</a>
+            <div class="right item">
+                <div class="ui icon input">
+                    <input type="text"placeholder="Search....">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<p th:text="'Hello, ' +'Everyone'+ '!'" />
+<div class="add">
+    <h2 class="ui  header">请输入长网址</h2>
+    <form action="/add" method="GET">
+        长网址:<input type="text" name="url"><br>
+        <div class="ui icon input">
+            <input type="submit"  value="缩短" >
+            <i class="idea link icon"></i>
+        </div>
+    </form>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="all">
+    <h2> <a href="/all">By LianWen Wu</a></h2>
+</div>
+
+<!--中间内容-->
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+<!--底部footer-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided grid">
+            <div class="three wide column">
+                <div class="item">
+                    <img src="./images/wechat.jpg" class="ui rounded image" alt="" style="width: 150px">
+                </div>
+            </div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <h4 class="ui inverted header">最新博客</h4>
+                </div>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+            </div>
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <h4 class="ui inverted header">最新博客</h4>
+                </div>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+                <a href="#" class="item m-text-thin m-text-spaced m-opacity-mini">用户故事（User Story)<br></a>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header">最新博客</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">我所理解的生活，就是和自己喜欢的一切在一起</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">鄂ICP备20002992号-1</p>
+    </div>
+
+</footer>
+</body>
+</html>
